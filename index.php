@@ -5,7 +5,7 @@ require "functions.php";
 
 $inputAge = readline($prompt = "Enter your age: ");
 $count = 1;
-if (!getError($inputAge))
+if (!checkAge($inputAge))
 {
 	echo "error";
 	return false;
@@ -16,6 +16,6 @@ foreach ($movies as $movie)
 	{
 		continue;
 	}
-	print($count . ". " . formattedMovie($movie) . "\n");
+	print($count . ". " . formatMovie($movie) . "\n");
 	++$count;
 }

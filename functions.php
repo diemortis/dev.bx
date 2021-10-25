@@ -1,9 +1,9 @@
 <?php
-function formattedMovie($array)
+function formatMovie($array)
 {
 	return ($array["title"]." (".$array["release_year"]."), ".$array["age_restriction"]."+. Rating - ".$array["rating"]);
 }
-function getError($value)
+function checkAge($value)
 {
-	return (is_numeric($value) && $value>=0 && $value<=100);
+	return (is_numeric($value) && (int)$value>=0 && (int)$value<=100);
 }

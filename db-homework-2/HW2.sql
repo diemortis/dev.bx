@@ -1,3 +1,17 @@
+/*1. Вывести список фильмов, в которых снимались одновременно Арнольд Шварценеггер* и Линда Хэмилтон*.
+  Формат: ID фильма, Название на русском языке, Имя режиссёра.*/
+
+SELECT movie.ID,
+       mt.TITLE,
+       d.Name as ACTOR_NAME
+from movie inner join movie_title mt on movie.ID = mt.MOVIE_ID
+     inner join director d on movie.DIRECTOR_ID = d.ID
+     inner join movie_actor ma on movie.ID = ma.MOVIE_ID and ACTOR_ID = 3
+WHERE LANGUAGE_ID = 'ru'
+      and movie.ID in (SELECT MOVIE_ID from movie_actor
+                         WHERE ACTOR_ID = 1)
+GROUP BY movie.ID, mt.TITLE, d.Name;
+
 
 #3. Вывести самый длительный фильм Джеймса Кэмерона*.
 #Формат: ID фильма, Название на русском языке, Длительность.

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&display=swap');
+
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	height: 100vh;
+	background: #383838;
+;
+}
+
+.block {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.sidebar {
+	display: block;
+	width: 400px;
+	background: #383838;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background: #CCCCCC;
+}
+
+.header {
+	height: 88px;
+	background: #FFFFFF;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.content {
+	display: flex;
+	flex: 1;
+	margin-left: 25px;
+	flex-direction: row;
+	overflow: auto;
+}
+.logo{
+	display: block;
+	align-items: center;
+	margin: 50px 90px 30px 90px;
+	width: 210px;
+	height: 67px;
+	background: url("./../images/logoBitflix.svg") center no-repeat;
+}
+
+.menu {
+	display: block;
+	overflow: auto;
+	max-height: 85vh;
+	margin-right: 15px;
+	margin-left: 0;
+}
+.menu::-webkit-scrollbar{
+	width: 7px;
+	background-color: #383838;
+}
+.menu::-webkit-scrollbar-thumb {
+	background-color: dimgrey;
+}
+
+.menu-item {
+	display: block;
+	border-bottom: 1px solid rgba(242, 242, 242, 0.1);
+	margin: 0 15px;
+}
+
+.menu-item a {
+	display: flex;
+	height: 70px;
+	padding: 0 15px;
+	align-items: center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #b7b7b7;
+}
+
+.menu-item:last-child {
+	border: none;
+}
+
+.menu-item-link:hover {
+	color: #fff;
+	background: rgba(255, 255, 255, 0.05);
+}
+.menu-item-link-active {
+	color: #fff;
+	background: rgba(255, 255, 255, 0.05);
+}

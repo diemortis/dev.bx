@@ -1,0 +1,171 @@
+.movie-card-wrapper{
+	display: block;
+	width: 80vw;
+	margin: 20px;
+	background: #fff;
+
+}
+
+.movie-card--head{
+	position: relative;
+	margin: 0 44px 0px 44px;
+	border-bottom: 1px #CCCCCC solid;
+	background: #fff;
+}
+.movie-card--head-title{
+	padding-top: 33px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 65px;
+
+	color: #333333;
+}
+.movie-card--head-subtitle{
+	padding-right: 10px;
+	padding-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33px;
+	color: #999999;
+}
+.movie-card--head-age-restriction{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 39px;
+	height: 32px;
+	background: rgba(242, 242, 242, 0.1);
+	border: 3px solid #CCCCCC;
+	box-sizing: border-box;
+	border-radius: 7px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #CCCCCC;
+
+
+}
+.movie-card--head-icon{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 55px;
+	width: 51px;
+	height: 51px;
+	background: url("./../images/heart.svg") center no-repeat;
+
+
+}
+.movie-card--info{
+
+	overflow: hidden;
+}
+.movie-card--info-image{
+	display: inline-block;
+	float: left;
+	height: 730px;
+	width: 470px;
+	margin: 33px 44px;
+	background: black;
+	border: 12px solid #f2f2f2;
+	background-size: cover;
+
+}
+
+.movie-card--info-item{
+	overflow: hidden;
+}
+.movie-card--info-title{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	margin: 25px 0;
+	color: #333333;
+}
+.movie-card--info-subtitle{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	min-width: 256px;
+	padding: 8px;
+	color: #666666;
+}
+.movie-card--info-rating{
+	display: table;
+	margin: 44px 44px 10px 16px;
+}
+.movie-card--info-rating-icon{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 15px;
+	height: 55px;
+	width: 55px;
+	background: url("./../images/ellipse.svg") center no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	align-items: center;
+
+	color: #FFFFFF;
+
+
+}
+.movie-card--info-text {
+	display: table-cell;
+	padding-top: 16px;
+	padding-right: 60px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
+}
+.movie-card--info-text-description{
+	padding-right: 60px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	color: #000000;
+}
+.movie-card--info-rating-square{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.movie-card--rating-square-red{
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+
+	background: #E78818;
+	border: 5px solid #FFFFFF;
+	box-sizing: border-box;
+
+}
+.movie-card--rating-square-grey{
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+
+	background: #f2f2f2;
+	border: 5px solid #FFFFFF;
+	box-sizing: border-box;
+
+}

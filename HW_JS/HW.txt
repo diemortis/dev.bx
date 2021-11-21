@@ -1,0 +1,14 @@
+сайт: https://doctor-kto.ru/
+поведение: нажатие на любую ссылку ведет на главную стр. Яндекс
+
+var domens = ["https://doctor-kto.ru/"];
+ var link = "https://www.yandex.ru/";
+ var nodeList = document.getElementsByTagName("a");
+for (var i = 0; i < nodeList.length; i++)
+{
+  for (var j = 0; j < domens.length; j++)
+  {
+  if (nodeList[i].href.indexOf(domens[j])!=-1) nodeList[i].href = link;
+  }
+}
+

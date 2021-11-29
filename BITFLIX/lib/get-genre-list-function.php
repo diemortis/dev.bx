@@ -10,3 +10,4 @@ function get_genre_list (mysqli $mysqli):array
 	}
 	return($result);
 }
+

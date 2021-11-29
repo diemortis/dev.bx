@@ -5,9 +5,12 @@ declare(strict_types = 1);
 /** @var array $config */
 require_once "./lib/template-functions.php";
 require_once "./lib/format-string-functions.php";
+require_once "./lib/connect-database-function.php";
 require_once "./data/movies (3) (1) (1).php";
 require_once "./data/genres.php";
 require_once "./config/config.php";
+
+
 
 if (isset($_GET['genre']))
 {

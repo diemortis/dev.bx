@@ -3,6 +3,11 @@
 /** @var string $content*/
 /** @var string $currentPage*/
 /** @var array $config */
+
+$mysqli = connectDatabase($config['db']);
+$menu = renderTemplate('./resources/pages/menu-genres.php',[
+					   'currentPage'=>$currentPage,
+					   'mysqli' => $mysqli]);
 ?>
 
 
@@ -23,10 +28,13 @@
 	<div class = "sidebar">
 		<div class = "logo"></div>
 		<div class = "menu">
-			<?php foreach ($config['menu'] as $code=>$name): ?>
+			<?php
+			foreach ($config['menu'] as  $code=>$name): ?>
 				<div class = "menu-item">
 					<a class = "menu-item-link<?= $currentPage === $code ? "-active" : ""?>" href = "<?='index.php?genre='.$code?>"><?=$name?></a></div>
 			<?php endforeach;?>
+			<?= $menu ?>
+
 		</div>
 	</div>
 	<div class = "container">

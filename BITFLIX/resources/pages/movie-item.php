@@ -2,7 +2,7 @@
 /** @var array $movies */
 /** @var array $genres */
 /** @var string $code */
-
+require_once "./lib/connect-database-function.php";
 ?>
 <head>
 	<link rel="stylesheet" href="./resources/css/movie-item-styles.css">

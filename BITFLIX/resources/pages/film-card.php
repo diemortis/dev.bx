@@ -1,6 +1,9 @@
 
 <?php
 /** @var array $movie */
+require_once "./lib/connect-database-function.php";
+
+$mysqli = connectDatabase($config['db']);
 $pathToImage = formatPathToImage($movie['id']);
 $square = renderTemplate ("resources/pages/rating-square.php",[
 	'rating'=>$movie['rating']

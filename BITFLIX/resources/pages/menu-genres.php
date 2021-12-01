@@ -1,10 +1,6 @@
 <?php
-require_once "./lib/connect-database-function.php";
-require_once "./lib/get-genre-list-function.php";
 /** @var string $currentPage*/
-/** @var mysqli $mysqli */
-
-$genres = get_genre_list($mysqli);
+/** @var $genres*/
 
 foreach ($genres as ['CODE'=> $code, 'NAME'=>$name]): ?>
 	<div class = "menu-item">

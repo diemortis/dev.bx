@@ -1,13 +1,13 @@
 <?php
-/** @var array $movies */
+/** @var array $genres */
 /** @var string $content*/
 /** @var string $currentPage*/
 /** @var array $config */
 
-$mysqli = connectDatabase($config['db']);
+
 $menu = renderTemplate('./resources/pages/menu-genres.php',[
 					   'currentPage'=>$currentPage,
-					   'mysqli' => $mysqli]);
+					   'genres' => $genres]);
 ?>
 
 

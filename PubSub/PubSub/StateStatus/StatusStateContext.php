@@ -1,18 +1,18 @@
 <?php
 
-namespace State;
+namespace StateUserStatus;
 
-class ServiceStateContext
+class StatusStateContext
 {
 	/**
-	 * @var ServiceState
+	 * @var StatusState
 	 */
 	private $state;
 
 	/**
-	 * @param ServiceState $state
+	 * @param StatusState $state
 	 */
-	public function __construct(ServiceState $initialState)
+	public function __construct(StatusState $initialState)
 	{
 		$this->state = $initialState;
 	}
@@ -25,10 +25,11 @@ class ServiceStateContext
 	}
 
 	/**
-	 * @return ServiceState
+	 * @return StatusState
 	 */
-	public function getState(): ServiceState
+	public function getState(): StatusState
 	{
 		return $this->state;
 	}
+
 }

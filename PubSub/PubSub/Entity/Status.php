@@ -2,6 +2,8 @@
 
 namespace Entity;
 
+use Event\EventBus;
+
 class Status
 {
 	private $activeDate;
@@ -57,6 +59,7 @@ class Status
 	public function setActiveDate($activeDate)
 	{
 		$this->activeDate = $activeDate;
+		EventBus::getInstance()->publish("statusActiveDate", $this);
 		return $this;
 	}
 

@@ -12,4 +12,9 @@ class Subscriber
 	{
 		echo $data->getName() . PHP_EOL;
 	}
+
+	public static function  statusActiveDate($data)
+	{
+		echo $data->getActiveDate() . PHP_EOL;
+	}
 }

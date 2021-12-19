@@ -1,6 +1,6 @@
 <?php
 
-namespace StateUserStatus;
+namespace StateStatus;
 
 class StatusStateContext
 {
